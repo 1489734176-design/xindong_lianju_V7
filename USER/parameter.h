@@ -108,7 +108,7 @@
 #define IBus_Avg_OCP2_MS               (500) //ms
 #define IBus_Avg_OCP2_MS_CONUT        (u16)((float)IBus_Avg_OCP2_MS*SLOWLOOP_FRE/1000.0f) 
 
-#define IBus_Avg_OCP3                  (95.0f)
+#define IBus_Avg_OCP3                  (110.0f)
 #define IBus_Avg_OCP3_AdcValue         (u16)(IBus_Avg_OCP3*CURRENT_ADC_PER_A)
 
 #define IBus_Avg_OCP3_MS               (30) //ms
@@ -132,17 +132,17 @@
 #if Block_Protect_Current_En
 
 #define Block_Protect_MAX_TIME                     (100*SLOWLOOP_1ms_CNT_LOAD)/*堵转时间unit:ms*/
-#define Block_Protect_Current1                      (95.00)/*unit:a*/ 
+#define Block_Protect_Current1                      (100.00)/*unit:a*/ 
 #define Block_Protect_Current1_AdcValue             (u16)(Block_Protect_Current1*CURRENT_ADC_PER_A)
 #define Block_Protect_Current1_TIME                 (80*SLOWLOOP_1ms_CNT_LOAD)/*堵转时间unit:ms*/
 
 
-#define Block_Protect_Current2                      (105.00)/*unit:a*/ 
+#define Block_Protect_Current2                      (110.00)/*unit:a*/ 
 #define Block_Protect_Current2_AdcValue             (u16)(Block_Protect_Current2*CURRENT_ADC_PER_A)
 #define Block_Protect_Current2_TIME                 (50*SLOWLOOP_1ms_CNT_LOAD)/*堵转时间unit:ms*/
 
 
-#define Block_Protect_Current3                      (110.00)/*unit:a*/ 
+#define Block_Protect_Current3                      (115.00)/*unit:a*/ 
 #define Block_Protect_Current3_AdcValue             (u16)(Block_Protect_Current3*CURRENT_ADC_PER_A)
 #define Block_Protect_Current3_TIME                 (50*SLOWLOOP_1ms_CNT_LOAD)/*堵转时间unit:ms*/
 
@@ -164,17 +164,17 @@
 
 #if Multistage_Peak_OCP_EN
 
-#define IBus_Smart_Peak_OCP1                      (120.00)/*unit:a*/ 
+#define IBus_Smart_Peak_OCP1                      (130.00)/*unit:a*/ 
 	#define IBus_Smart_Peak_OCP1_AdcValue             (u16)(IBus_Smart_Peak_OCP1*CURRENT_ADC_PER_A)
 	#define IBus_Smart_Peak_OCP1_MS                   (550) //ms
 	#define IBus_Smart_OCP1_MS_Operation_Value        (u16)(32768.0f/((float)IBus_Smart_Peak_OCP1_MS*SLOWLOOP_FRE/1000.0f))
 
-	#define IBus_Smart_Peak_OCP2                      (130.00)/*unit:a*/ 
+	#define IBus_Smart_Peak_OCP2                      (140.00)/*unit:a*/ 
 	#define IBus_Smart_Peak_OCP2_AdcValue             (u16)(IBus_Smart_Peak_OCP2*CURRENT_ADC_PER_A)
 	#define IBus_Smart_Peak_OCP2_MS                   (100) //ms
 	#define IBus_Smart_OCP2_MS_Operation_Value        (u16)(32768.0f/((float)IBus_Smart_Peak_OCP2_MS*SLOWLOOP_FRE/1000.0f))
 		
-	#define IBus_Smart_Peak_OCP3                      (140.00)/*unit:a*/ 
+	#define IBus_Smart_Peak_OCP3                      (150.00)/*unit:a*/ 
 	#define IBus_Smart_Peak_OCP3_AdcValue             (u16)(IBus_Smart_Peak_OCP3*CURRENT_ADC_PER_A)
 	#define IBus_Smart_Peak_OCP3_MS                   (10) //ms
 	#define IBus_Smart_OCP3_MS_Operation_Value        (u16)(32768.0f/((float)IBus_Smart_Peak_OCP3_MS*SLOWLOOP_FRE/1000.0f))
@@ -191,7 +191,7 @@
 
 #endif
 #define IBus_Peak_OCP_ONCE_EN              (1)
-#define IBus_Peak_OCP_ONCE               (150.0f)  //峰值保护，单次检测触发
+#define IBus_Peak_OCP_ONCE               (160.0f)  //峰值保护，单次检测触发
 #define IBus_Peak_OCP_ONCE_AdcValue      (u16)(IBus_Peak_OCP_ONCE*CURRENT_ADC_PER_A)
 
 
@@ -204,10 +204,10 @@
 
 /* 平均电流限流目标为 63A，原有各级过流保护保持不变。 */
 #define LIMIT_AVG_CURRENT_EN               (1)
-#define LIMIT_AVG_CURRENT                  (63.0f)
+#define LIMIT_AVG_CURRENT                  (65.0f)
 #define LIMIT_AVG_CURRENT_AdcValue         (u16)(LIMIT_AVG_CURRENT*CURRENT_ADC_PER_A)
 /* 仅限制高占空比运行时的平均限流下降，不改变全局及启动最低占空比。 */
-#define LIMIT_AVG_CURRENT_MIN_DUTY          ((u16)(PWM_PRIOD_LOAD*0.40f))
+#define LIMIT_AVG_CURRENT_MIN_DUTY          ((u16)(PWM_PRIOD_LOAD*0.90f))
 
 
 #define LIMIT_PROTECT_EN               (0)

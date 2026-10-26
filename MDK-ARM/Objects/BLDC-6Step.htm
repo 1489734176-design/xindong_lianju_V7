@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\BLDC-6Step.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\BLDC-6Step.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Oct 19 16:21:15 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Oct 26 18:31:01 2026
 <BR><P>
 <H3>Maximum Stack Usage =        108 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -349,7 +349,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
 </UL>
 
-<P><STRONG><a name="[d]"></a>ADC_IRQHandler</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, mm32g0001_it.o(i.ADC_IRQHandler))
+<P><STRONG><a name="[d]"></a>ADC_IRQHandler</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, mm32g0001_it.o(i.ADC_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
 <LI>Call Chain = ADC_IRQHandler
 </UL>
@@ -1114,7 +1114,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[97]"></a>mc_init</STRONG> (Thumb, 152 bytes, Stack size 64 bytes, motor_control.o(i.mc_init))
+<P><STRONG><a name="[97]"></a>mc_init</STRONG> (Thumb, 150 bytes, Stack size 64 bytes, motor_control.o(i.mc_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84 + Unknown Stack Size
 <LI>Call Chain = mc_init &rArr; mc_core_list_init &rArr; __aeabi_ui2f &rArr; _float_epilogue
 </UL>
@@ -1178,7 +1178,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[81]"></a>pwm_set</STRONG> (Thumb, 268 bytes, Stack size 24 bytes, motor_control.o(i.pwm_set))
+<P><STRONG><a name="[81]"></a>pwm_set</STRONG> (Thumb, 270 bytes, Stack size 24 bytes, motor_control.o(i.pwm_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = pwm_set &rArr; __aeabi_ui2f &rArr; _float_epilogue
 </UL>
 <BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PwmDutyUpdate
@@ -1220,7 +1220,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[9c]"></a>user_oc_handle</STRONG> (Thumb, 524 bytes, Stack size 24 bytes, user_control.o(i.user_oc_handle))
+<P><STRONG><a name="[9c]"></a>user_oc_handle</STRONG> (Thumb, 528 bytes, Stack size 24 bytes, user_control.o(i.user_oc_handle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = user_oc_handle &rArr; __aeabi_ui2f &rArr; _float_epilogue
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
